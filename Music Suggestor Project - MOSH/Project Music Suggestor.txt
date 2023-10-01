@@ -1,0 +1,89 @@
+Build a model that can learn and predict the music that you like (Python and Jupyter): 
+
+Steps: 
+
+1. Import the data 
+
+2. Clean the data (no duplicates)  
+
+3.) Split the data into training/Test Sets
+
+4.) Create the model (select the algorithm) 
+
+5.) Train the model (feed it the data) 
+
+6.) Make predictions (model makes the prediction) 
+
+7.) Evalate and improve the model 
+
+
+Popular libraries: 
+
+Numpy: Provides a multi-dimensional array 
+
+Pandas: data analysis library
+
+MatPlotLib: Creating graphs on plots 
+
+Use Jupyter as an editor 
+
+
+Importing a Dataset (Jupyter): 
+
+- Download dataset of Kaggle (generally a csv) 
+- Save it in the same location as Jupyter project 
+- Use pandas to display the data library 
+
+For Ex: 
+import pandas as pd
+df = pd.read_csv('vgsales.csv')
+df
+
+Describing the Dataset: Shows all the basic stats of the data 
+df.describe()
+
+
+Displaying the values: Displays the values of the data as a 2D Array 
+df.values()
+
+
+Actual Project: When a user signs up we ask for their age and gender and based on their profile we suggest music that they'll like (Genre/Artists) 
+
+The Data:
+
+age: The user's age 
+
+gender: 1 = male, 0 = female 
+
+genre:  genre of their preferred genre of music 
+
+Model/Agent: 
+
+Using Decision Tree: Using built-in sklearn.tree 
+
+Example Import: 
+
+sklearn.tree import DecisionTreeClassifier 
+model = DecisionTreeClassifier()
+model.fit(X, Y) [
+model.predict([21, 0], [22, 0])
+
+
+
+
+
+Assumptions: 
+
+Men between 20-25 like Hip/Hop
+Men between 26-30  like  Jazz
+Men 31+ are into classical 
+
+Women 20-25 like like Dance 
+Women 26-30 like Acoustic 
+Women 30+ like classical 
+
+
+
+
+
+
